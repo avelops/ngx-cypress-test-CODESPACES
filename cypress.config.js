@@ -1,11 +1,15 @@
-const { defineConfig } = require('cypress')
+const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
+  viewportHeight: 1080,
+  viewportWidth: 1920,
+  video: false,
   e2e: {
-    // We've imported your old cypress plugins here.
-    // You may want to clean this up later by importing these.
+    baseUrl: "http://localhost:4200",
+    excludeSpecPattern: ["**/1-getting-started", "**/2-advanced-examples"],
+    specPattern: "cypress/e2e/**/*.{js,jsx,ts,tsx}",
     setupNodeEvents(on, config) {
-      return require('./cypress/plugins/index.js')(on, config)
+      return require("./cypress/plugins/index.js")(on, config);
     },
   },
-})
+});
