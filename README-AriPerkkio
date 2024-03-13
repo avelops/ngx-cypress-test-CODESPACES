@@ -1,0 +1,6 @@
+cypress-codespaces-example
+Setup based on cypress-io/cypress-documentation#2956 (comment).
+
+Click link https://localhost:8080
+Login using MUST_BE_SOMETHING as password
+Run yarn cy open
