@@ -2,5 +2,6 @@
   "dockerComposeFile": "docker-compose.yml",
   "service": "development",
   "forwardPorts": [8080,4200],
-  "postCreateCommand": "yarn install && yarn cy install && node install --force && npm start"
+  "postCreateCommand": "yarn install && yarn cy install"
+  // "postCreateCommand": "yarn install && yarn cy install && node install --force && npm start"
 }
