@@ -2,6 +2,14 @@
   "dockerComposeFile": "docker-compose.yml",
   "service": "development",
   "forwardPorts": [8080,4200],
-  "postCreateCommand": "yarn install && yarn cy install"
+  "postCreateCommand": "yarn install && yarn cy install",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "xabikos.JavaScriptSnippets",
+        "deinsoftware.arrow-function-snippets"
+      ]
+    }
+  }
   // "postCreateCommand": "yarn install && yarn cy install && node install --force && npm start"
 }
